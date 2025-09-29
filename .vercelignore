@@ -1,0 +1,15 @@
+node_modules
+.git
+*.log
+.env
+.env.*
+!.env.example
+server
+attached_assets
+components.json
+design_guidelines.md
+postcss.config.js
+tailwind.config.ts
+drizzle.config.ts
+*.md
+README.md
