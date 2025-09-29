@@ -1,0 +1,85 @@
+I want you to create a professional, attractive, and formal website for my Final Year Project (FYP) named *Giftnix AI Model Development – Credit Card Fraud Detection*.  
+
+The website should simulate a real financial fraud detection system. It should be clean, modern, and corporate with a tech/AI theme. Use a blue, white, and dark gray color palette. The font should be professional (Poppins, Roboto, or Open Sans). The entire site must be fully responsive (desktop + mobile).  
+
+## Website Requirements
+
+### 1. Login Page
+- Fields:  
+  - Cardholder Name  
+  - Card Number  
+  - Expiry Date (MM/YY)  
+  - CVV  
+  - Password  
+- A checkbox: *“Verify you are a human”*.  
+- On submission, simulate *SMS verification*:  
+  - Show: “A verification code has been sent to your number. Enter it to proceed.”  
+  - Accept a static OTP (e.g., 1234) for demonstration.  
+  - If correct → redirect to dashboard.  
+  - If incorrect → show “Invalid verification code”.  
+- Add lock icon + disclaimer: “This is a simulation. No real banking data is stored.”  
+
+### 2. Dashboard (After Login)
+- Navigation Bar: Home | About | How It Works | Demo | Team | Contact | Logout  
+- Sections:  
+  1. *Overview Cards*  
+     - Total Transactions Tested  
+     - Fraudulent Transactions Detected  
+     - Detection Accuracy % (placeholder)  
+     - System Reliability  
+  2. *Charts (use Chart.js or Recharts)*  
+     - Pie chart: Fraud vs. Not Fraud  
+     - Line/Bar chart: Fraud detection trends  
+  3. *Demo Section (Fraud Prediction Form)*  
+     - Fields: Transaction Amount, Age, Transaction Type (dropdown), Location  
+     - Validation Rules:  
+       - Age must be 0–90.  
+         - If age > 90 → show “Age limit crossed”.  
+         - If age < 0 → show “Age cannot be negative”.  
+       - Transaction amount must be ≥ 0. If negative → show “Invalid transaction amount”.  
+     - Fraud Detection Logic:  
+       - *Option A (Real AI Integration):* Connect the form to a backend API (Flask/FastAPI) where a trained machine learning model predicts Fraud vs. Not Fraud. The model should be based on features like transaction amount, age, location, transaction type, and time. Return both prediction and confidence score.  
+       - *Option B (Simulation for Demo):* Use simple rule-based logic in JavaScript if no backend is available. For example:  
+         - If amount > 5000 and age < 20 → “Fraud (Suspicious high amount for young user)”.  
+         - If too many transactions in 1 minute → “Fraud (Suspicious frequency)”.  
+         - Otherwise → “Not Fraud”.  
+     - Output: Prediction result (“Fraud” or “Not Fraud”) with *color-coded alert* (red = fraud, green = safe).  
+     - Also display *AI confidence score* (e.g., “Prediction: Fraud (87% confidence)”).  
+  4. *Features Section*  
+     - Cards/icons for: Real-Time Detection, Secure Transactions, AI-Powered Accuracy, Data Insights.  
+  5. *Use Cases Section*  
+     - Showcase where this can be applied: Banking, E-commerce, Digital Wallets, Payment Processors.  
+  6. *Team Section*  
+     - Member cards with name, role, placeholder images.  
+  7. *Contact Section*  
+     - Simple form + email placeholder.  
+  8. *Footer*  
+     - Links: Privacy Policy, Disclaimer, GitHub Repo (placeholder).  
+     - © 2025 Giftnix AI. All Rights Reserved.  
+
+### 3. Additional Requirements
+- Smooth animations for transitions, hover effects, and form inputs.  
+- Keep it minimal but modern.  
+- Dashboard must feel like a *real banking fraud detection system*.  
+- Include a *logout button* that returns to the login page.  
+
+⚡ Important: At the end, also *give me the complete source code separately* (HTML, CSS, JS, and any assets) so I can host and customize it myself.
+also below are features are of this dataset you can take help from this 
+Feature Details
+Transaction ID: A unique identifier for each transaction.
+Customer ID: A unique identifier for each customer.
+Transaction Amount: The total amount of money exchanged in the transaction.
+Transaction Date: The date and time when the transaction took place.
+Payment Method: The method used to complete the transaction (e.g., credit card, PayPal, etc.).
+Product Category: The category of the product involved in the transaction.
+Quantity: The number of products involved in the transaction.
+Customer Age: The age of the customer making the transaction.
+Customer Location: The geographical location of the customer.
+Device Used: The type of device used to make the transaction (e.g., mobile, desktop).
+IP Address: The IP address of the device used for the transaction.
+Shipping Address: The address where the product was shipped.
+Billing Address: The address associated with the payment method.
+Is Fraudulent: A binary indicator of whether the transaction is fraudulent (1 for fraudulent, 0 for legitimate).
+Account Age Days: The age of the customer's account in days at the time of the transaction.
+Transaction Hour: The hour of the day when the transaction occurred.
+now you can have to modify that you have to make a login page where user enter his or her name and his password also it will verify through sms or email and these login  pages would be seperate for both user and admin seperately in user i have to just login the page and purchase gift cards like for food panda daraz netflix amazon youtube spotify google play i tunes Automotive Beauty Clothing Electronics Gaming Food & Beverage Gas Grocery & Pharmacy Home Improvement Movies & Entertainment Music Office Restaurant Specialty Sports & Outdoor in this user have to give his credit card details and purchase e gift cards for above and also in admin section it will have login seperately and in admin section it will detect fraud transactions and showing graphs which models are used and which have high accuracy 
